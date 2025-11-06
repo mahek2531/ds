@@ -1,0 +1,25 @@
+# Create two vectors of different lengths
+v1 <- c(2, 4, 6)
+v2 <- c(1, 3, 5, 7, 9, 11)
+
+# Combine vectors into arrays (matrices)
+# Use 'dim' to create 2x3 matrices (recycling elements if needed)
+m1 <- array(v1, dim = c(2, 3))
+m2 <- array(v2, dim = c(2, 3))
+
+# Print matrices
+print("Matrix 1:")
+print(m1)
+
+print("Matrix 2:")
+print(m2)
+
+# Addition of matrices
+add <- m1 + m2
+print("Addition of Matrices:")
+print(add)
+
+# Subtraction of matrices
+sub <- m1 - m2
+print("Subtraction of Matrices:")
+print(sub)
