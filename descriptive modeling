@@ -1,0 +1,30 @@
+# Descriptive Modeling Techniques in R
+# 1. Summary Statistics
+# 2. Correlation Analysis
+
+# --- Summary Statistics ---
+data <- c(12, 45, 67, 34, 23, 89, 56, 78, 90, 44)
+
+data_summary <- summary(data)
+data_mean <- mean(data)
+data_median <- median(data)
+data_sd <- sd(data)
+
+print("Summary of Data:")
+print(data_summary)
+print(paste("Mean:", data_mean))
+print(paste("Median:", data_median))
+print(paste("Standard Deviation:", data_sd))
+
+# --- Correlation Analysis ---
+height <- c(150, 160, 165, 170, 175, 180, 185, 190)
+weight <- c(50, 55, 60, 65, 70, 75, 80, 85)
+
+correlation <- cor(height, weight)
+
+print("Correlation between height and weight:")
+print(correlation)
+
+plot(height, weight, main = "Height vs Weight",
+     xlab = "Height (cm)", ylab = "Weight (kg)",
+     col = "blue", pch = 16)
