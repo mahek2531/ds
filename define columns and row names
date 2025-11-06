@@ -1,0 +1,13 @@
+# Create a vector of numbers
+numbers <- c(10, 20, 30, 40, 50, 60)
+
+# Create a matrix using the vector
+mat <- matrix(numbers, nrow = 2, ncol = 3, byrow = TRUE)
+
+# Define row and column names
+rownames(mat) <- c("Row1", "Row2")
+colnames(mat) <- c("Col1", "Col2", "Col3")
+
+# Display the matrix
+print("Matrix with Row and Column Names:")
+print(mat)
