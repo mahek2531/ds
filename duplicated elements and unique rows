@@ -1,0 +1,20 @@
+# Create two vectors
+names <- c("Amit", "Riya", "Karan", "Riya", "Neha", "Amit")
+marks <- c(85, 90, 78, 90, 88, 85)
+
+# Create a data frame using the vectors
+student_data <- data.frame(Name = names, Marks = marks)
+
+# Display the original data frame
+print("Original Data Frame:")
+print(student_data)
+
+# Find duplicated elements (rows)
+dup_rows <- student_data[duplicated(student_data), ]
+print("Duplicated Rows:")
+print(dup_rows)
+
+# Find unique rows
+unique_rows <- unique(student_data)
+print("Unique Rows:")
+print(unique_rows)
