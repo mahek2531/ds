@@ -1,0 +1,11 @@
+# Program to generate a multiplication table of a given number
+
+# Take input from the user
+num <- as.integer(readline(prompt = "Enter a number: "))
+
+# Generate and print the multiplication table
+print(paste("Multiplication Table of", num, ":"))
+for (i in 1:10) {
+  result <- num * i
+  print(paste(num, "x", i, "=", result))
+}
