@@ -1,0 +1,13 @@
+# Input: number to calculate factorial
+num <- as.integer(readline(prompt = "Enter a number: "))
+
+# Initialize factorial
+fact <- 1
+
+# Calculate factorial using for loop
+for(i in 1:num){
+  fact <- fact * i
+}
+
+# Display the result
+cat("Factorial of", num, "is", fact, "\n")
