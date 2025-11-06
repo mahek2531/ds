@@ -1,0 +1,16 @@
+# Create a numeric vector
+my_vector <- c(25, 10, 45, 5, 30)
+
+# Display the original vector
+print("Original Vector:")
+print(my_vector)
+
+# Sort the vector in ascending order
+ascending_order <- sort(my_vector)
+print("Sorted Vector in Ascending Order:")
+print(ascending_order)
+
+# Sort the vector in descending order
+descending_order <- sort(my_vector, decreasing = TRUE)
+print("Sorted Vector in Descending Order:")
+print(descending_order)
