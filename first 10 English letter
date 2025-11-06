@@ -1,0 +1,17 @@
+# Extract first 10 English letters in lower case
+first10_lower <- letters[1:10]
+print("First 10 letters (lower case):")
+print(first10_lower)
+# Output: a b c d e f g h i j
+
+# Extract last 10 English letters in upper case
+last10_upper <- LETTERS[17:26]  # 17th to 26th letters
+print("Last 10 letters (upper case):")
+print(last10_upper)
+# Output: Q R S T U V W X Y Z
+
+# Extract letters between 22nd to 24th in upper case
+letters_22_24 <- LETTERS[22:24]
+print("22nd to 24th letters (upper case):")
+print(letters_22_24)
+# Output: V W X
