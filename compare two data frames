@@ -1,0 +1,25 @@
+# Create the first data frame
+df1 <- data.frame(
+  ID = c(1, 2, 3, 4, 5),
+  Name = c("Amit", "Riya", "Karan", "Neha", "Pooja")
+)
+
+# Create the second data frame
+df2 <- data.frame(
+  ID = c(3, 4, 5, 6, 7),
+  Name = c("Karan", "Neha", "Pooja", "Tina", "Raj")
+)
+
+# Display the original data frames
+print("First Data Frame:")
+print(df1)
+
+print("Second Data Frame:")
+print(df2)
+
+# Find elements (rows) present in df1 but not in df2
+diff_df <- subset(df1, !(Name %in% df2$Name))
+
+# Display the result
+print("Elements in First Data Frame not present in Second Data Frame:")
+print(diff_df)
