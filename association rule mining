@@ -1,0 +1,24 @@
+library(arules)
+library(arulesViz)
+
+transactions <- list(
+  c("Bread", "Butter", "Jam", "Milk"),
+  c("Bread", "Butter", "Milk"),
+  c("Bread", "Juice", "Curd"),
+  c("Bread", "Milk", "Juice"),
+  c("Butter", "Milk", "Juice")
+)
+
+txn <- as(transactions,"transactions")
+
+apriori_rules <- apriori(txn,parameter = list(supp=0.5,conf=0.75))
+inspect(apriori_rules)
+
+plot(apriori_rules,method="grouped",main="apriori rules")
+
+freq_itemset <- eclat(txn,parameter = list(supp=0.5))
+inspect(freq_itemset)
+
+rules_eclat <- ruleInduction(freq_itemset,txn,confidence = 0.75)
+
+plot(rules_eclat,method="grouped",main="Eclat rules")
