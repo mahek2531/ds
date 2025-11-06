@@ -1,0 +1,14 @@
+# Create a numeric vector
+my_vector <- c(10, 20, 30, 40, 50)
+
+# Calculate sum
+vector_sum <- sum(my_vector)
+print(paste("Sum:", vector_sum))
+
+# Calculate mean
+vector_mean <- mean(my_vector)
+print(paste("Mean:", vector_mean))
+
+# Calculate product
+vector_product <- prod(my_vector)
+print(paste("Product:", vector_product))
