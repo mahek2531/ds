@@ -1,0 +1,17 @@
+# Create a data frame with employee details
+employee_data <- data.frame(
+  Emp_ID = c(105, 102, 104, 101, 103),
+  Name = c("Amit", "Riya", "Karan", "Neha", "Pooja"),
+  Salary = c(45000, 52000, 48000, 60000, 47000)
+)
+
+# Display the original data frame
+print("Original Employee Data Frame:")
+print(employee_data)
+
+# Sort the data frame in ascending order by Employee ID
+sorted_data <- employee_data[order(employee_data$Emp_ID), ]
+
+# Display the sorted data frame
+print("Employee Details in Ascending Order (by Emp_ID):")
+print(sorted_data)
