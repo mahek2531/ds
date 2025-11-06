@@ -1,0 +1,16 @@
+# Create a list of 10 strings
+string_list <- list("banana", "apple", "mango", "cherry", "grape", 
+                    "orange", "kiwi", "peach", "plum", "melon")
+
+# Convert list to vector for sorting
+string_vector <- unlist(string_list)
+
+# Sort in ascending order
+ascending <- sort(string_vector)
+print("Strings in Ascending Order:")
+print(ascending)
+
+# Sort in descending order
+descending <- sort(string_vector, decreasing = TRUE)
+print("Strings in Descending Order:")
+print(descending)
