@@ -1,0 +1,11 @@
+# Create a matrix
+mat <- matrix(1:9, nrow = 3, ncol = 3)
+print("Original Matrix:")
+print(mat)
+
+# Convert the matrix to a list of column vectors
+list_columns <- split(mat, col(mat))
+
+# Display the list
+print("List of Column Vectors:")
+print(list_columns)
