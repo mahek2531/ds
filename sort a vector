@@ -1,0 +1,12 @@
+# Create a vector
+v <- c(15, 3, 9, 27, 12)
+
+# Sort the vector in ascending order
+ascending <- sort(v)
+print("Sorted Vector in Ascending Order:")
+print(ascending)
+
+# Sort the vector in descending order
+descending <- sort(v, decreasing = TRUE)
+print("Sorted Vector in Descending Order:")
+print(descending)
