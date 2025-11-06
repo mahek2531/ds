@@ -1,0 +1,32 @@
+# Create the first 2x3 matrix
+matrix1 <- matrix(c(2, 4, 6, 8, 10, 12), nrow = 2, ncol = 3)
+
+# Create the second 2x3 matrix
+matrix2 <- matrix(c(1, 3, 5, 7, 9, 11), nrow = 2, ncol = 3)
+
+# Display both matrices
+print("First Matrix:")
+print(matrix1)
+
+print("Second Matrix:")
+print(matrix2)
+
+# Addition of matrices
+add_result <- matrix1 + matrix2
+print("Addition of Matrices:")
+print(add_result)
+
+# Subtraction of matrices
+sub_result <- matrix1 - matrix2
+print("Subtraction of Matrices:")
+print(sub_result)
+
+# Multiplication of matrices (element-wise)
+mul_result <- matrix1 * matrix2
+print("Multiplication of Matrices:")
+print(mul_result)
+
+# Division of matrices (element-wise)
+div_result <- matrix1 / matrix2
+print("Division of Matrices:")
+print(div_result)
