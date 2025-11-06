@@ -1,0 +1,22 @@
+# Create a list of cities
+cities <- list("Mumbai", "Delhi", "Chennai", "Kolkata", "Pune")
+
+# Give names to the elements in the list
+names(cities) <- c("City1", "City2", "City3", "City4", "City5")
+print("List of Cities with Names:")
+print(cities)
+
+# Add an element at the end of the list
+cities$City6 <- "Hyderabad"
+print("List after Adding an Element:")
+print(cities)
+
+# Remove the last element
+cities$City6 <- NULL
+print("List after Removing the Last Element:")
+print(cities)
+
+# Update the 3rd element
+cities$City3 <- "Bengaluru"
+print("List after Updating the 3rd Element:")
+print(cities)
