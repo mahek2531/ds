@@ -1,0 +1,18 @@
+# Create a sample data frame
+student_data <- data.frame(
+  Name = c("Amit", "Riya", "Karan", "Neha", "Pooja"),
+  Age = c(21, 22, 20, 23, 21),
+  Marks = c(85, 90, 78, 88, 92)
+)
+
+# Display the original data frame
+print("Original Data Frame:")
+print(student_data)
+
+# Extract 3rd and 5th rows with 1st and 3rd columns
+extracted_data <- student_data[c(3, 5), c(1, 3)]
+
+# Display the extracted data
+print("Extracted 3rd and 5th Rows with 1st and 3rd Columns:")
+print(extracted_data)
+
