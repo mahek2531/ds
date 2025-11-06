@@ -1,0 +1,49 @@
+# ----------------------------------------------------
+# Program: Plot Histogram, Bar Chart and Pie Chart
+# ----------------------------------------------------
+
+# Sample data
+marks <- c(45, 67, 89, 56, 76, 92, 58, 73, 84, 61)
+subjects <- c("Maths", "Science", "English", "History", "Computer")
+scores <- c(85, 90, 75, 80, 95)
+categories <- c("A", "B", "C", "D")
+values <- c(25, 35, 20, 20)
+
+# -----------------------------
+# 1️⃣ Histogram
+# -----------------------------
+hist(
+  marks,
+  main = "Histogram of Student Marks",
+  xlab = "Marks",
+  ylab = "Frequency",
+  col = "skyblue",
+  border = "white"
+)
+
+# -----------------------------
+# 2️⃣ Bar Chart
+# -----------------------------
+barplot(
+  scores,
+  names.arg = subjects,
+  col = c("orange", "lightgreen", "pink", "violet", "cyan"),
+  main = "Bar Chart of Subject Scores",
+  xlab = "Subjects",
+  ylab = "Scores",
+  ylim = c(0, 100)
+)
+
+# -----------------------------
+# 3️⃣ Pie Chart
+# -----------------------------
+pie(
+  values,
+  labels = categories,
+  main = "Pie Chart of Category Distribution",
+  col = rainbow(length(categories))
+)
+
+# ----------------------------------------------------
+# End of Program
+# ----------------------------------------------------
